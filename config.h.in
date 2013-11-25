@@ -273,6 +273,9 @@
 /* Define to 1 if the system has the type `struct opthdr'. */
 #undef HAVE_STRUCT_OPTHDR
 
+/* Define to 1 if the system has the type `struct ptrace_peeksiginfo_args'. */
+#undef HAVE_STRUCT_PTRACE_PEEKSIGINFO_ARGS
+
 /* Define to 1 if the system has the type `struct pt_all_user_regs'. */
 #undef HAVE_STRUCT_PT_ALL_USER_REGS
 
