@@ -3,6 +3,8 @@
 
 typedef struct utimbuf utimbuf_t;
 
+DEF_MPERS_TYPE(utimbuf_t)
+
 SYS_FUNC(utime)
 {
 	if (entering(tcp)) {

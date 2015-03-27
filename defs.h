@@ -679,3 +679,18 @@ extern unsigned num_quals;
 #endif
 
 #define SYS_FUNC(syscall_name) int SYS_FUNC_NAME(syscall_name)(struct tcb *tcp)
+
+#ifndef MPERS_FUNC_NAME
+# define MPERS_FUNC_NAME(args) args
+#endif
+
+#define SYS_FUNC_NAME__(syscall_name) SYS_FUNC_NAME(syscall_name)
+#define SYS_MPERS_FUNC_NAME(syscall_name) SYS_FUNC_NAME__(MPERS_FUNC_NAME(syscall_name))
+
+#ifndef DEF_MPERS_TYPE
+# define DEF_MPERS_TYPE(args)
+#endif
+
+#ifndef DEF_MPERS_FUNC
+# define DEF_MPERS_FUNC(args)
+#endif

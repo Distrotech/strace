@@ -1,5 +1,7 @@
 #include "defs.h"
 
+DEF_MPERS_TYPE(stack_t)
+
 #include "xlat/sigaltstack_flags.h"
 
 static void

@@ -1,5 +1,9 @@
 #include "defs.h"
 
+DEF_MPERS_TYPE(siginfo_t)
+DEF_MPERS_FUNC(printsiginfo)
+DEF_MPERS_FUNC(printsiginfo_at)
+
 #include "xlat/sigbus_codes.h"
 #include "xlat/sigchld_codes.h"
 #include "xlat/sigfpe_codes.h"
