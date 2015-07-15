@@ -35,6 +35,7 @@ umovestr
 umovestr2
 unix-pair-send-recv
 utime
+wait
 xattr
 *.log
 *.log.*

@@ -46,6 +46,7 @@ check_PROGRAMS = \
 	umovestr2 \
 	unix-pair-send-recv \
 	utime \
+	wait \
 	xattr
 
 filter_unavailable_LDADD = -lpthread
@@ -99,6 +100,7 @@ TESTS = \
 	uid32.test \
 	uio.test \
 	utime.test \
+	wait.test \
 	xattr.test \
 	count.test \
 	detach-sleeping.test \
@@ -141,6 +143,7 @@ EXTRA_DIST = init.sh run.sh match.awk \
 	     umovestr.expected \
 	     unix-yy-accept.awk \
 	     unix-yy-connect.awk \
+	     wait.expected \
 	     xattr.expected \
 	     $(TESTS)
 
